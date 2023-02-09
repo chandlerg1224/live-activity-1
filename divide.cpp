@@ -7,6 +7,12 @@ using namespace std;
 
 float divide(float numerator, float denominator)
 {
+	if(denominator == 0)
+	{
+		throw std::runtime_error("Divide by zero!!");
+	}
+	
+
 	return (numerator / denominator);
 }
 
